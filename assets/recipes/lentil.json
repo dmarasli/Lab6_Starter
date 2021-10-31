@@ -1,0 +1,208 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [{
+        "@type": "Organization",
+        "@id": "https://www.recipetineats.com/#organization",
+        "name": "RecipeTin Eats",
+        "url": "https://www.recipetineats.com/",
+        "sameAs": ["https://www.facebook.com/RecipeTinEats", "http://instagram.com/recipe_tin", "https://www.linkedin.com/in/nagi-maehashi-9779648b", "https://www.youtube.com/c/recipetineats", "http://www.pinterest.com/recipetin/"],
+        "logo": {
+            "@type": "ImageObject",
+            "@id": "https://www.recipetineats.com/#logo",
+            "inLanguage": "en-US",
+            "url": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+            "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+            "width": 2591,
+            "height": 347,
+            "caption": "RecipeTin Eats"
+        },
+        "image": {
+            "@id": "https://www.recipetineats.com/#logo"
+        }
+    }, {
+        "@type": "WebSite",
+        "@id": "https://www.recipetineats.com/#website",
+        "url": "https://www.recipetineats.com/",
+        "name": "RecipeTin Eats",
+        "description": "Fast Prep, Big Flavours",
+        "publisher": {
+            "@id": "https://www.recipetineats.com/#organization"
+        },
+        "potentialAction": [{
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.recipetineats.com/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }],
+        "inLanguage": "en-US"
+    }, {
+        "@type": "ImageObject",
+        "@id": "https://www.recipetineats.com/lentil-soup/#primaryimage",
+        "inLanguage": "en-US",
+        "url": "https://www.recipetineats.com/wp-content/uploads/2017/03/Lentil-Soup-6.jpg",
+        "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2017/03/Lentil-Soup-6.jpg",
+        "width": 964,
+        "height": 1350,
+        "caption": "Why settle for a bland Lentil Soup when you make a standout one? Just a hint of spices and finishing it off with lemon zest makes all the difference! www.recipetineats.com"
+    }, {
+        "@type": "WebPage",
+        "@id": "https://www.recipetineats.com/lentil-soup/#webpage",
+        "url": "https://www.recipetineats.com/lentil-soup/",
+        "name": "Lentil Soup (seriously amazing!) | RecipeTin Eats",
+        "isPartOf": {
+            "@id": "https://www.recipetineats.com/#website"
+        },
+        "primaryImageOfPage": {
+            "@id": "https://www.recipetineats.com/lentil-soup/#primaryimage"
+        },
+        "datePublished": "2020-03-23T02:10:00+00:00",
+        "dateModified": "2020-11-17T23:25:38+00:00",
+        "description": "Don't settle for a bland Lentil Soup. Just a few little tips make all the difference, and you'll have everyone begging for seconds .... and thirds!",
+        "breadcrumb": {
+            "@id": "https://www.recipetineats.com/lentil-soup/#breadcrumb"
+        },
+        "inLanguage": "en-US",
+        "potentialAction": [{
+            "@type": "ReadAction",
+            "target": ["https://www.recipetineats.com/lentil-soup/"]
+        }]
+    }, {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.recipetineats.com/lentil-soup/#breadcrumb",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.recipetineats.com/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Soups",
+            "item": "https://www.recipetineats.com/category/soup-recipes/"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Lentil Soup (seriously amazing!)"
+        }]
+    }, {
+        "@type": "Article",
+        "@id": "https://www.recipetineats.com/lentil-soup/#article",
+        "isPartOf": {
+            "@id": "https://www.recipetineats.com/lentil-soup/#webpage"
+        },
+        "author": {
+            "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9"
+        },
+        "headline": "Lentil Soup (seriously amazing!)",
+        "datePublished": "2020-03-23T02:10:00+00:00",
+        "dateModified": "2020-11-17T23:25:38+00:00",
+        "wordCount": 1594,
+        "commentCount": 1305,
+        "publisher": {
+            "@id": "https://www.recipetineats.com/#organization"
+        },
+        "image": {
+            "@id": "https://www.recipetineats.com/lentil-soup/#primaryimage"
+        },
+        "thumbnailUrl": "https://www.recipetineats.com/wp-content/uploads/2017/03/Lentil-Soup-6.jpg",
+        "articleSection": ["Bean and Lentil Recipes", "Coronavirus Food", "Main Dishes", "Quick and Easy", "Quick Dinner Recipes", "Soups", "Winter Warmers"],
+        "inLanguage": "en-US",
+        "potentialAction": [{
+            "@type": "CommentAction",
+            "name": "Comment",
+            "target": ["https://www.recipetineats.com/lentil-soup/#respond"]
+        }]
+    }, {
+        "@type": "Person",
+        "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9",
+        "name": "Nagi",
+        "image": {
+            "@type": "ImageObject",
+            "@id": "https://www.recipetineats.com/#personlogo",
+            "inLanguage": "en-US",
+            "url": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+            "contentUrl": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+            "caption": "Nagi"
+        },
+        "description": "I believe you can make great food with everyday ingredients even if you\u2019re short on time and cost conscious. You just need to cook clever and get creative!",
+        "sameAs": ["http:////www.recipetineats.com/about-me/"]
+    }, {
+        "@context": "http://schema.org/",
+        "@type": "Recipe",
+        "name": "Lentil Soup",
+        "author": {
+            "@type": "Person",
+            "name": "Nagi@RecipeTin Eats"
+        },
+        "description": "Recipe VIDEO above. Don't settle for a bland lentil soup. Make it right, and you'll have everyone begging for seconds...and thirds! The touch of spices and finishing it off with lemon really lifts this soup to the next level. &nbsp;",
+        "datePublished": "2020-03-23T13:10:00+00:00",
+        "image": ["https://www.recipetineats.com/wp-content/uploads/2020/03/Lentil-Soup-6-SQ.jpg", "https://www.recipetineats.com/wp-content/uploads/2020/03/Lentil-Soup-6-SQ.jpg?w=500&h=500&crop=1", "https://www.recipetineats.com/wp-content/uploads/2020/03/Lentil-Soup-6-SQ.jpg?w=500&h=375&crop=1", "https://www.recipetineats.com/wp-content/uploads/2020/03/Lentil-Soup-6-SQ.jpg?w=480&h=270&crop=1"],
+        "recipeYield": ["6"],
+        "prepTime": "PT10M",
+        "cookTime": "PT45M",
+        "totalTime": "PT55M",
+        "recipeIngredient": ["2 tbsp olive oil", "1  onion, chopped ((white, brown, yellow))", "2  garlic cloves, minced", "1  large carrot  (, chopped (about 1 1/4 cups))", "2  celery ribs (, chopped (about 1 1/4 cups))", "2 cups / 400g  dried lentils (, green or brown, rinsed (Note 1))", "400g / 14 oz  crushed tomato", "1.5 litres / 1.5 quarts (6 cups)  vegetable or chicken  (stock / broth, low sodium)", "1/2 tsp each cumin and coriander powder", "1 1/2 tsp paprika powder", "2  dried bay leaves", "1  lemon (zest + juice)", "1/4 tsp salt and pepper, (each)", "Chopped fresh parsley, for garnish", "Warm bread, to serve"],
+        "recipeInstructions": [{
+            "@type": "HowToStep",
+            "text": "Heat oil in a large pot over medium heat. Add garlic and onion, cook for 2 minutes.",
+            "name": "Heat oil in a large pot over medium heat. Add garlic and onion, cook for 2 minutes.",
+            "url": "https://www.recipetineats.com/lentil-soup/#wprm-recipe-20178-step-0-0"
+        }, {
+            "@type": "HowToStep",
+            "text": "Add celery and carrot. Cook for 7 - 10 minutes or until softened and the onion is sweet. Don't rush this step, it is key to the flavour base of the soup.",
+            "name": "Add celery and carrot. Cook for 7 - 10 minutes or until softened and the onion is sweet. Don't rush this step, it is key to the flavour base of the soup.",
+            "url": "https://www.recipetineats.com/lentil-soup/#wprm-recipe-20178-step-0-1"
+        }, {
+            "@type": "HowToStep",
+            "text": "Add all remaining ingredients except the lemon and salt. Stir.&nbsp;",
+            "name": "Add all remaining ingredients except the lemon and salt. Stir.&nbsp;",
+            "url": "https://www.recipetineats.com/lentil-soup/#wprm-recipe-20178-step-0-2"
+        }, {
+            "@type": "HowToStep",
+            "text": "Increase heat and bring to simmer. Scoop scum on the surface off and discard (do this again during cooking if required). Place lid on and turn heat down to medium low. Simmer for 35 - 40 minutes or until lentils are soft.",
+            "name": "Increase heat and bring to simmer. Scoop scum on the surface off and discard (do this again during cooking if required). Place lid on and turn heat down to medium low. Simmer for 35 - 40 minutes or until lentils are soft.",
+            "url": "https://www.recipetineats.com/lentil-soup/#wprm-recipe-20178-step-0-3"
+        }, {
+            "@type": "HowToStep",
+            "text": "Remove bay leaves.",
+            "name": "Remove bay leaves.",
+            "url": "https://www.recipetineats.com/lentil-soup/#wprm-recipe-20178-step-0-4"
+        }, {
+            "@type": "HowToStep",
+            "text": "Thicken Soup: Using a stick blender, do 2 or 3 quick whizzes to thicken the soup (see video below). Or transfer 2 cups to a blender, let it cool slightly, then hold lid with tea towel and blend then transfer back into pot.",
+            "name": "Thicken Soup: Using a stick blender, do 2 or 3 quick whizzes to thicken the soup (see video below). Or transfer 2 cups to a blender, let it cool slightly, then hold lid with tea towel and blend then transfer back into pot.",
+            "url": "https://www.recipetineats.com/lentil-soup/#wprm-recipe-20178-step-0-5"
+        }, {
+            "@type": "HowToStep",
+            "text": "Add a touch of water if you want to adjust soup consistency. Season to taste with salt and pepper. Grate over the zest of the lemon then add a squeeze of lemon juice just before serving. Garnish with parsley if desired and serve with warm crusty bread slathered liberally with butter!",
+            "name": "Add a touch of water if you want to adjust soup consistency. Season to taste with salt and pepper. Grate over the zest of the lemon then add a squeeze of lemon juice just before serving. Garnish with parsley if desired and serve with warm crusty bread slathered liberally with butter!",
+            "url": "https://www.recipetineats.com/lentil-soup/#wprm-recipe-20178-step-0-6"
+        }],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.98",
+            "ratingCount": "462"
+        },
+        "recipeCategory": ["Mains", "Soup"],
+        "recipeCuisine": ["Western"],
+        "keywords": "Lentil Soup",
+        "nutrition": {
+            "@type": "NutritionInformation",
+            "servingSize": "421 g",
+            "calories": "311 kcal",
+            "carbohydrateContent": "48 g",
+            "proteinContent": "18 g",
+            "fatContent": "5 g",
+            "sodiumContent": "111 mg",
+            "fiberContent": "22 g",
+            "sugarContent": "5 g"
+        },
+        "@id": "https://www.recipetineats.com/lentil-soup/#recipe",
+        "isPartOf": {
+            "@id": "https://www.recipetineats.com/lentil-soup/#article"
+        },
+        "mainEntityOfPage": "https://www.recipetineats.com/lentil-soup/#webpage"
+    }]
+} 

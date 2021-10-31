@@ -1,8 +1,12 @@
 class RecipeCard extends HTMLElement {
   constructor() {
     // Part 1 Expose - TODO
+    super();
+     // You'll want to attach the shadow DOM here
+     // attaches shadow tree and returns shadow root reference
+    const shadow = this.attachShadow({ mode: 'open' });
 
-    // You'll want to attach the shadow DOM here
+    
   }
 
   set data(data) {
@@ -100,6 +104,66 @@ class RecipeCard extends HTMLElement {
     // created in the constructor()
 
     // Part 1 Expose - TODO
+    //this.shadow.appendChild(styleElem);
+
+    //thumbnail
+        const recipeImg = document.createElement('img');
+        recipeImg.src = searchForKey(data, 'thumbnailUrl') || searchForKey(data, 'thumbnail');
+        recipeImg.alt = searchForKey(data, 'headline');
+        card.appendChild(recipeImg);
+
+        // title
+        const title = document.createElement('p');
+        title.className = 'title';
+        card.appendChild(title);
+
+        // link to title
+        const link = document.createElement('a');
+        link.href = getUrl(data);
+        link.textContent = searchForKey(data, 'headline');
+        title.appendChild(link);
+
+        // Adding organization
+        const organization = document.createElement('p');
+        organization.className = 'organization';
+        organization.textContent = getOrganization(data);
+        card.appendChild(organization);
+
+        // Adding rating
+        const rating = document.createElement('div');
+        rating.className = 'rating';
+        card.appendChild(rating);
+
+        // # Adding rating value to rating
+        const ratingValue = document.createElement('span');
+        ratingValue.textContent = searchForKey(data, 'ratingValue') || 'No Reviews';
+        rating.appendChild(ratingValue);
+
+        // # Adding rating stars to rating
+        if (searchForKey(data, 'aggregateRating')) {
+            const ratingStars = document.createElement('img');
+            const starCount = Math.round(searchForKey(data, 'ratingValue'));
+            ratingStars.src = `assets/images/icons/${starCount}-star.svg`;
+            ratingStars.alt = `${starCount} stars`;
+            rating.appendChild(ratingStars);
+            // # Adding rating count to rating
+            const ratingCount = document.createElement('span');
+            ratingCount.textContent = `(${searchForKey(data, 'ratingCount')})`;
+            rating.appendChild(ratingCount);
+        }
+        // Adding time
+        const time = document.createElement('time');
+        time.textContent = convertTime(searchForKey(data, 'totalTime'));
+        card.appendChild(time);
+        // Adding ingredients
+        const ingredients = document.createElement('p');
+        ingredients.className = 'ingredients';
+        ingredients.textContent = createIngredientList(searchForKey(data, 'recipeIngredient'));
+        card.appendChild(ingredients);
+
+        this.shadowRoot.appendChild(card);
+        this.shadowRoot.appendChild(styleElem);
+
   }
 }
 
